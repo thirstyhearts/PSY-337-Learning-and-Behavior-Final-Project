@@ -11,18 +11,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-image: url('waves.jpg')
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
+       
         .post-container {
             max-width: 800px;
             margin: 20px auto;
@@ -53,12 +44,93 @@
             font-size: 0.9em;
             color: #777;
         }
+
+        img {
+            display: block;
+            margin: 0 auto;
+         }
+
+         .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5dc8d6;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Nav links container */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Gold color when hovered */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+}
+
+         
     </style>
 </head>
 <body>
 
 <header>
-    <h1>PSY 337 Learning and Behavior Final Project</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">PSY 337</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <div class="post-container">
@@ -73,10 +145,9 @@
     <!-- Blog Post Content -->
     <div class="post-content">
         <p>Are you out of breath after going up a single flight of stairs? Maybe you can’t fit in your pants anymore. How about staring at the ceiling until 6:00 AM, hearing your alarm go off in the background. Or everytime you feel stressed are you reaching for the nearest little debbie? (Not a sponsor but it could be, hit me up Debbie) </p>
-
+        <img src="Out Of Breath.jpg" alt="Man Bent Over">
         <p>Trust me, you are not alone in these experiences. Life is becoming more and more sedentary, we have to actively seek out exercising and getting our steps in. This is reflected in America’s obesity rate, nearing almost 50%(National Institute of Diabetes and Digestive and Kidney Diseases 2021). It is hard to adjust your schedule to fit in the exercise or set aside hours evernight to cook healthy meals. However, it is important we put in the work and lower this statistic.Obesity by itself makes it hard to get around and drains your energy but it also increases the risk of many other conditions. Obesity can increase risk of a plethora of health conditions: high blood pressure and high cholesterol which is a risk factor for heart disease, type 2 diabetes, sleep apnea, asthma, gallstones and gallbladder disease.(CDC 2022).
         So what can you do to combat this rising statistic and feel better again? Well, you can use behavior psychology to recondition yourself. </p>
-        
         
         <h2>Sleep</h2>
         <p>I'm going to start this program with sleep because sleep is crucial. Without the energy to make it through the day there is no way you are going to be able to change your habits and routine. There’s this thing called classical conditioning. You may have heard of it in passing, something about a scientist and his weird obsession with dogs and their drool. Well the run down of classical conditioning is pairing a neutral stimulus with a natural response. See more detailed explanation in this article by Saul McLeod from 2024. </p>
